@@ -49,3 +49,9 @@ bash run_mmsearch_grpo.sh
 Environment Variables:Ensure the following variables are set correctly in the script before running:WANDB_API_KEY: (Optional) WandB API Key.SAVE_CHECKPOINT_DIR: Directory to save model checkpoints.DATASET_TRAIN: Path to the training dataset.DATASET_VAL: Path to the validation dataset.REF_MODEL_PATH: Path to the reference model
 
 ## We are actively curating the remaining assets of this project and working through the necessary licensing approvals.
+
+
+
+# Citation
+## NOTE：Our work and acceptance by ICML 2026
+Please cite this work if you find it useful:
