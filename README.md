@@ -47,6 +47,8 @@ pip install --no-cache-dir flash_attn-2.8.3+cu12torch2.7cxx11abiFALSE-cp310-cp31
 2. Data PreparationTraining requires specific parquet files.⚠️ Important: The training set is a mixture of internal data and FVQA. The images column format has changed and is no longer a list.Training Set: /inspire/hdd/project/public/datasets.parquetValidation Set: fvqa_test.parquet (Download: HuggingFace FVQA)Search Cache: Current image-to-image search uses a local cache. (Download: HuggingFace Cache)3. Deploy Local Search ServiceRefer to the setup instructions in Search-R1.Startup Script: /inspire/hdd/project/continuinglearningtheory/public/miror/search/re.shResources: E5 model and wiki25 database/index are located at /inspire/hdd/project/continuinglearningtheory/public/wiki25.4. Start TrainingUse the provided script to launch the training job:Bashcd Train
 bash run_mmsearch_grpo.sh
 Environment Variables:Ensure the following variables are set correctly in the script before running:WANDB_API_KEY: (Optional) WandB API Key.SAVE_CHECKPOINT_DIR: Directory to save model checkpoints.DATASET_TRAIN: Path to the training dataset.DATASET_VAL: Path to the validation dataset.REF_MODEL_PATH: Path to the reference model
+```
+
 
 ## We are actively curating the remaining assets of this project and working through the necessary licensing approvals.
 
