@@ -1,0 +1,55 @@
+tools:
+  - class_name: "verl.tools.web_text_search_tool.WebTextSearchTool"
+    config:
+      type: "native"
+      service_url: "https://nat-notebook-inspire./ws-6e6ba362-e98e-45b2-9c5a-311998e93d65/project-f9befcd0-b0a2-4299-b8d6-974ad13595d9/user-fcaffd46-e912-43be-9cb5-1f326be31ef5/vscode/fa45f7e8-6aef-4028-bad8-6416e7ac57b9/ccd5d208-e51d-4eb3-bd2e-34ec712d8a4b/proxy/8002/"
+      timeout: 180
+      max_results: 3
+    tool_schema:
+      type: "function"
+      function:
+        name: "web_text_search"
+        description: "Searches for relevant information based on a query using web search."
+        parameters:
+          type: "object"
+          properties:
+            query:
+              type: "string"
+              description: "The search query"
+          required:
+            - "query"
+
+  - class_name: "verl.tools.web_image_to_image_search_tool.WebImageToImageSearchTool"
+    config:
+      type: "native"
+      train_cache_path: "FVQA_Cache/fvqa_train_cache"
+      test_cache_path: "FVQA_Cache/fvqa_test_cache"
+      max_images: 3
+      create_placeholders: true
+    tool_schema:
+      type: "function"
+      function:
+        name: "web_image_to_image_search"
+        description: "Searches for relevant images based on the original image using web search, **you can only call it once**."
+  - class_name: "verl.tools.web_visit_tool.WebVisitTool"
+    config:
+      type: "native"
+      service_url: "https://nat-notebook-inspire/ws-6e6ba362-e98e-45b2-9c5a-311998e93d65/project-f9befcd0-b0a2-4299-b8d6-974ad13595d9/user-fcaffd46-e912-43be-9cb5-1f326be31ef5/vscode/fa45f7e8-6aef-4028-bad8-6416e7ac57b9/ccd5d208-e51d-4eb3-bd2e-34ec712d8a4b/proxy/8002/"
+      timeout: 240
+    tool_schema:
+      type: "function"
+      function:
+        name: "web_visit"
+        description: "Visits a given webpage and returns a summary based on a specified goal."
+        parameters:
+          type: "object"
+          properties:
+            url:
+              type: "string"
+              description: "The target webpage URL."
+            goal:
+              type: "string"
+              description: "The goal or information the agent seeks from the webpage."
+          required:
+            - "url"
+            - "goal"
