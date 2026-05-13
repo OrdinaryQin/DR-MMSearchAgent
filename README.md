@@ -48,13 +48,33 @@ pip install --no-cache-dir flash_attn-2.8.3+cu12torch2.7cxx11abiFALSE-cp310-cp31
 bash run_mmsearch_grpo.sh
 Environment Variables:Ensure the following variables are set correctly in the script before running:WANDB_API_KEY: (Optional) WandB API Key.SAVE_CHECKPOINT_DIR: Directory to save model checkpoints.DATASET_TRAIN: Path to the training dataset.DATASET_VAL: Path to the validation dataset.REF_MODEL_PATH: Path to the reference model
 ```
+### 2. Data Preparation
 
+**Data path**
+```bash
+DATASET_TRAIN consists of Fvqa_train and our BridgeVQA.
+DATASETVNet are composed of Fvqa_test
+```
+**Local service**
+```bash
+text searh: https://github.com/petergriffinjin/search-r1
+image search: https://github.com/EvolvingLMMs-Lab/multimodal-search-r1
+```
 
-## We are actively curating the remaining assets of this project and working through the necessary licensing approvals.
+### 3. Training with local search
+**Command**
+```bash
+bash run_mmsearch_grpo.sh
+```
+### 4. Eval
+**Command**
+```bash
+bash run_fvqa_test.sh
+```
 
-
-
+### 5. More details
+**Updating**
 
 # Citation
-## NOTE：Our work and acceptance by ICML 2026
-Please cite this work if you find it useful:
+
+Please cite this work if you find it useful.
