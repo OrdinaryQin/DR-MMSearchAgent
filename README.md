@@ -75,6 +75,13 @@ bash run_fvqa_test.sh
 ### 5. More details
 **Updating**
 
+# Acknowledgments
+**We would like to make improvements based on the following. Thank you very much**
+* [MMSearch-R1](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1)
+* [Verl](https://github.com/verl-project/verl)
+* [Search-R1](https://github.com/petergriffinjin/search-r1)
+
+  
 # Citation
 
 Please cite this work if you find it useful.
