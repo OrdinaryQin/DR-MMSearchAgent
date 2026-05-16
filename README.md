@@ -94,6 +94,7 @@ Data and experimental parameter configuration：run_mmsearch_grpo.sh
 * [MMSearch-R1](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1)
 * [Verl](https://github.com/verl-project/verl)
 * [Search-R1](https://github.com/petergriffinjin/search-r1)
+* [SenseNova-MARS](https://github.com/OpenSenseNova/SenseNova-MARS)
 
   
 # Citation
