@@ -468,11 +468,11 @@ def compute_score(data_source: str, solution_str: str, ground_truth: str, extra_
         tool_efficiency_score = 0.1  #
     else:
         if accuracy_score >= 0.8:
-
+#BGAS parameters need to be updated here
             tool_efficiency_score = gaussian_reward(
                 tool_count,
-                mu=2,  # 最佳点
-                sigma=3  # 平滑宽度
+                mu=2, 
+                sigma=3  
             )
         else:
 
@@ -524,8 +524,7 @@ def compute_score(data_source: str, solution_str: str, ground_truth: str, extra_
     else:
         final_score = (
                 0.7 * accuracy_score +
-                0.1 * format_score +
-                0.1 * summary_score +
+                0.2 * (format_score +summary_score) +
                 0.1 * tool_efficiency_score
         )
 
