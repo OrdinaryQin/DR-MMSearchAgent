@@ -1,6 +1,6 @@
 # DR-MMSearchAgent
 ## 📥 Models & Datasets 
-"Almost all our code, models, and real datasets are now open-source. Feel free to contact us with any questions or bug reports 🐛 (and please bear with us if we reply slowly due to our busy, multi-threaded schedules 😵‍💫🔥)."
+"Almost all our code, models, and real datasets are now open-source. Feel free to contact us with any questions or bug reports 🐛 ."
 
 * **🤖  (Model):** [Shengqina/DR-MMSearchAgent](https://huggingface.co/Shengqina/DR-MMSearchAgent)
 * **📊  (Dataset):** [Shengqina/BridgeVQA](https://huggingface.co/datasets/Shengqina/BridgeVQA)
