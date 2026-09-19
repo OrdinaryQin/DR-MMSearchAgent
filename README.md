@@ -4,7 +4,7 @@
 
 * **🤖  (Model):** [Shengqina/DR-MMSearchAgent](https://huggingface.co/Shengqina/DR-MMSearchAgent)
 * **📊  (Dataset):** [Shengqina/BridgeVQA](https://huggingface.co/datasets/Shengqina/BridgeVQA)
-
+* **☀️ (News):** DR-MMSearchAgent has been accepted by ICML 2026
 DR-MMSearchAgent: Deepening Reasoning in Multimodal Search Agents
 
 
